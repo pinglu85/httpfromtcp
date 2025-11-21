@@ -11,7 +11,7 @@ import (
 // func getLinesFromReader(f io.ReadCloser) <-chan string {
 // 	// Create a buffered channel of strings that accept 1 value.
 // 	// By default channels are unbuffered, meaning that they will only accept
-// 	// sends (chan <-) if there is a corresponding receive (<- chan) ready to
+// 	// sends (chan <- v) if there is a corresponding receive (<- chan) ready to
 // 	// receive the sent value. Buffered channels accept a limited number of
 // 	// values without a corresponding receiver for those values.
 // 	out := make(chan string, 1)
